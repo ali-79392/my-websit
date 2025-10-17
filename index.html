@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <!-- 
+ISE WB HW - F24
+Ammar Zerouk (ammar_94038)
+Ali Haj Ali (ali_79392)
+Ahmad Helal (ahmad_114613)
+-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دليل فعاليات المدينة</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header & Navbar -->
+    <header class="shadow-sm">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/img/logo.png"
+              alt="دليل المدينة"
+              class="img-fluid logo-responsive"
+            />
+            دليل المدينة
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">كل الفعاليات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">عن الدليل</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">اتصل بنا</a>
+              </li>
+              <li class="nav-item">
+                <button
+                  id="darkModeToggle"
+                  class="btn btn-outline-secondary ms-2"
+                  title="Toggle Dark Mode"
+                >
+                  🌙
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <!-- Hero Section -->
+      <section class="text-center bg-primary text-white p-5 rounded mb-4">
+        <h1>أهلاً بك في دليل فعاليات المدينة</h1>
+        <p class="lead">
+          وجهتك الأولى لاكتشاف أفضل الفعاليات والأنشطة في مدينتك.
+        </p>
+      </section>
+
+      <!-- Featured Events Slider -->
+      <section class="mb-5">
+        <h2 class="section-title">فعاليات بارزة هذا الأسبوع</h2>
+        <div
+          id="featuredEventsCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#featuredEventsCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#featuredEventsCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#featuredEventsCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/car1.jpg"
+                class="d-block w-100"
+                alt="مهرجان موسيقي"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>مهرجان الموسيقى السنوي</h5>
+                <p>انضموا إلينا في احتفالية موسيقية لا مثيل لها.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/car2.jpg"
+                class="d-block w-100"
+                alt="معرض فني"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>معرض الفن التشكيلي</h5>
+                <p>أعمال فنية مبدعة من فنانين محليين وعالميين.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/car3.jpg"
+                class="d-block w-100"
+                alt="ماراثون رياضي"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>ماراثون المدينة الخيري</h5>
+                <p>اركض من أجل قضية نبيلة وادعم مجتمعك.</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#featuredEventsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#featuredEventsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Quick Categories -->
+      <section class="mb-5 text-center">
+        <h2 class="section-title">تصنيفات سريعة</h2>
+        <a href="events.html" class="btn btn-outline-primary m-1">ثقافة</a>
+        <a href="events.html" class="btn btn-outline-success m-1">رياضة</a>
+        <a href="events.html" class="btn btn-outline-danger m-1">موسيقى</a>
+        <a href="events.html" class="btn btn-outline-warning m-1">عائلي</a>
+        <a href="events.html" class="btn btn-outline-info m-1">تسوق</a>
+      </section>
+
+      <!-- Latest Events -->
+      <section>
+        <h2 class="section-title">أحدث الفعاليات</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <!-- Event Card 1 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm event-card">
+              <img
+                src="assets/img/photograph_workshop.jpg"
+                class="card-img-top"
+                alt="صورة فعالية"
+              />
+              <div class="card-body">
+                <h5 class="card-title">ورشة عمل التصوير الفوتوغرافي</h5>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >التاريخ: 20 تشرين الأول 2025 | المكان: مركز الفنون</small
+                  >
+                </p>
+                <p class="card-text">تعلم أساسيات التصوير مع مصورين محترفين.</p>
+                <a href="event.html" class="btn btn-primary">عرض التفاصيل</a>
+              </div>
+            </div>
+          </div>
+          <!-- Event Card 2 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm event-card">
+              <img
+                src="assets/img/food_festival.jpg"
+                class="card-img-top"
+                alt="صورة فعالية"
+              />
+              <div class="card-body">
+                <h5 class="card-title">مهرجان الطعام المحلي</h5>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >التاريخ: 25 تشرين الأول 2025 | المكان: حديقة المدينة</small
+                  >
+                </p>
+                <p class="card-text">تذوق أشهى المأكولات من مطابخ متنوعة.</p>
+                <a href="event.html" class="btn btn-primary">عرض التفاصيل</a>
+              </div>
+            </div>
+          </div>
+          <!-- Event Card 3 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm event-card">
+              <img
+                src="assets/img/classic_music.jpg"
+                class="card-img-top"
+                alt="صورة فعالية"
+              />
+              <div class="card-body">
+                <h5 class="card-title">أمسية موسيقية كلاسيكية</h5>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >التاريخ: 30 تشرين الأول 2025 | المكان: دار الأوبرا</small
+                  >
+                </p>
+                <p class="card-text">
+                  استمتع بأروع المقطوعات الكلاسيكية العالمية.
+                </p>
+                <a href="event.html" class="btn btn-primary">عرض التفاصيل</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+      <div class="container">
+        <p>جميع الحقوق محفوظة &copy; 2025 دليل فعاليات المدينة.</p>
+        <p>
+          تم تطوير هذا المشروع لوظيفة الويب WB للفصل F24 بواسطة: <br />
+          عمار زيروق (ammar_94038), علي الحاج علي (ali_79392), أحمد هلال
+          (ahmad_114613)
+        </p>
+        <div>
+          <a href="#" class="text-white me-2">فيسبوك</a>
+          <a href="#" class="text-white me-2">تويتر</a>
+          <a href="#" class="text-white">انستغرام</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollToTopBtn"
+      class="btn btn-primary scroll-to-top"
+      aria-label="Scroll to top"
+    >
+      ↑
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
